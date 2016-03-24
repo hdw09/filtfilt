@@ -4,9 +4,9 @@ We wirte a filtflit function in java . The filtflit's output is the same as it's
 
 最近实验室做android项目需要使用零相位滤波，在Matlab上有直接的实现，
 C++也有相应的版本，唯独java中在网上没有找到。因而萌生的自己动手写
-一个java实现的方法。
+一个java实现的想法。
 
-在网上搜的一个C++对于filtfilt的实现，在文件夹“filtfilt-C++”中有visual studio 2010的工程
+本项目参考了在网上搜的一个C++对于filtfilt的实现，在文件夹“filtfilt-C++”中有visual studio 2010的工程
 由于原作者不可考证，在这里特别感谢这位匿名的同学。
 
 

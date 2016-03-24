@@ -1,26 +1,22 @@
 # filtfilt
  * We wirte a filtflit function in java . The filtflit's output is the same as it's in Matlab .
- * @author »Æ´óÎÀ,ºúÅÎ
+==
+ * @author é»„å¤§å«,èƒ¡ç›¼
  * @version 1.0
- * @Time 2016Äê3ÔÂ23ÈÕÏÂÎç9:04:28
- * @Description µ÷ÓÃstatic·½·¨£ºdoFiltfiltÖ´ÐÐÂË²¨
- * @copyright °²»Õ´óÑ§ iiphci ÊµÑéÊÒ
+ * @Time 2016å¹´3æœˆ23æ—¥ä¸‹åˆ9:04:28
+ * @Description è°ƒç”¨staticæ–¹æ³•ï¼šdoFiltfiltæ‰§è¡Œæ»¤æ³¢
+ * @copyright å®‰å¾½å¤§å­¦ iiphci å®žéªŒå®¤
+
+>æœ€è¿‘å®žéªŒå®¤åšandroidé¡¹ç›®éœ€è¦ä½¿ç”¨é›¶ç›¸ä½æ»¤æ³¢ï¼Œåœ¨Matlabä¸Šæœ‰ç›´æŽ¥çš„å®žçŽ°ï¼Œ
+C++ä¹Ÿæœ‰ç›¸åº”çš„ç‰ˆæœ¬ï¼Œå”¯ç‹¬javaä¸­åœ¨ç½‘ä¸Šæ²¡æœ‰æ‰¾åˆ°ã€‚å› è€ŒèŒç”Ÿçš„è‡ªå·±åŠ¨æ‰‹å†™
+ä¸€ä¸ªjavaå®žçŽ°çš„æƒ³æ³•ã€‚
+æœ¬é¡¹ç›®å‚è€ƒäº†åœ¨ç½‘ä¸Šæœçš„ä¸€ä¸ªC++å¯¹äºŽfiltfiltçš„å®žçŽ°ï¼Œåœ¨æ–‡ä»¶å¤¹â€œfiltfilt-C++â€ä¸­æœ‰visual studio 2010çš„å·¥ç¨‹
+ç”±äºŽåŽŸä½œè€…ä¸å¯è€ƒè¯ï¼Œåœ¨è¿™é‡Œç‰¹åˆ«æ„Ÿè°¢è¿™ä½åŒ¿åçš„åŒå­¦ã€‚
+åœ¨æ–‡ä»¶å¤¹â€œiltfilt-Javaâ€ä¸­æœ‰è‡ªå·±å¯¹filtfiltçš„javaå®žçŽ°ã€‚
+ä½¿ç”¨ååˆ†æ–¹ä¾¿ç›´æŽ¥è°ƒç”¨`Filtfilt`ç±»çš„é™æ€æ–¹æ³•`doFiltfilt`å³å¯
 
 
-×î½üÊµÑéÊÒ×öandroidÏîÄ¿ÐèÒªÊ¹ÓÃÁãÏàÎ»ÂË²¨£¬ÔÚMatlabÉÏÓÐÖ±½ÓµÄÊµÏÖ£¬
-C++Ò²ÓÐÏàÓ¦µÄ°æ±¾£¬Î¨¶ÀjavaÖÐÔÚÍøÉÏÃ»ÓÐÕÒµ½¡£Òò¶øÃÈÉúµÄ×Ô¼º¶¯ÊÖÐ´
-Ò»¸öjavaÊµÏÖµÄÏë·¨¡£
-
-±¾ÏîÄ¿²Î¿¼ÁËÔÚÍøÉÏËÑµÄÒ»¸öC++¶ÔÓÚfiltfiltµÄÊµÏÖ£¬ÔÚÎÄ¼þ¼Ð¡°filtfilt-C++¡±ÖÐÓÐvisual studio 2010µÄ¹¤³Ì
-ÓÉÓÚÔ­×÷Õß²»¿É¿¼Ö¤£¬ÔÚÕâÀïÌØ±ð¸ÐÐ»ÕâÎ»ÄäÃûµÄÍ¬Ñ§¡£
-
-
-ÔÚÎÄ¼þ¼Ð¡°iltfilt-Java¡±ÖÐÓÐ×Ô¼º¶ÔfiltfiltµÄjavaÊµÏÖ¡£
-
-
- *Ê¹ÓÃÊ®·Ö·½±ãÖ±½Óµ÷ÓÃFiltfiltÀàµÄ¾²Ì¬·½·¨doFiltfilt¼´¿É
-
------------------------------²âÊÔ´úÂë-----------------------------
+-----------------------------æµ‹è¯•ä»£ç -----------------------------
 
 		ArrayList<Double> B = new ArrayList<Double>();
 		ArrayList<Double> A = new ArrayList<Double>();
@@ -47,7 +43,7 @@ C++Ò²ÓÐÏàÓ¦µÄ°æ±¾£¬Î¨¶ÀjavaÖÐÔÚÍøÉÏÃ»ÓÐÕÒµ½¡£Òò¶øÃÈÉúµÄ×Ô¼º¶¯ÊÖÐ´
 		for (int i = 0; i < y.size(); i++)
 			System.out.println(y.get(i));
 			
-	---------------------------Êä³ö½á¹û---------------------------
+	---------------------------è¾“å‡ºç»“æžœ---------------------------
 				-6731884.25
 				7501778.75
 				-2757230.25
@@ -55,7 +51,7 @@ C++Ò²ÓÐÏàÓ¦µÄ°æ±¾£¬Î¨¶ÀjavaÖÐÔÚÍøÉÏÃ»ÓÐÕÒµ½¡£Òò¶øÃÈÉúµÄ×Ô¼º¶¯ÊÖÐ´
 				1360955.75
 				-686678.25
 				4135.75
-				227147.75                              ÓëMatlabµÄÊä³öÍêÈ«ÏàÍ¬¡£
+				227147.75                              ä¸ŽMatlabçš„è¾“å‡ºå®Œå…¨ç›¸åŒã€‚
 
 
 

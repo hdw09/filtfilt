@@ -1,5 +1,10 @@
 # filtfilt
-We wirte a filtflit function in java . The filtflit's output is the same as it's in Matlab .
+ * We wirte a filtflit function in java . The filtflit's output is the same as it's in Matlab .
+ * @author 黄大卫,胡盼
+ * @version 1.0
+ * @Time 2016年3月23日下午9:04:28
+ * @Description 调用static方法：doFiltfilt执行滤波
+ * @copyright 安徽大学 iiphci 实验室
 
 
 最近实验室做android项目需要使用零相位滤波，在Matlab上有直接的实现，

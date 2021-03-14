@@ -3,14 +3,14 @@ package com.iiphci.dsp;
 import java.util.ArrayList;
 
 /**
- * ÁãÏàÎ»ÂË²¨º¯Êı
+ * é›¶ç›¸ä½æ»¤æ³¢å‡½æ•°
  * 
- * @author »Æ´óÎÀ,ºúÅÎ
+ * @author é»„å¤§å«,èƒ¡ç›¼
  * @Email hhhdddwww@163.com
  * @version 1.0
- * @Time 2016Äê3ÔÂ23ÈÕÏÂÎç9:04:28
- * @Description µ÷ÓÃstatic·½·¨£ºdoFiltfiltÖ´ĞĞÂË²¨
- * @copyright °²»Õ´óÑ§ iiphci ÊµÑéÊÒ
+ * @Time 2016å¹´3æœˆ23æ—¥ä¸‹åˆ9:04:28
+ * @Description è°ƒç”¨staticæ–¹æ³•ï¼šdoFiltfiltæ‰§è¡Œæ»¤æ³¢
+ * @copyright å®‰å¾½å¤§å­¦ iiphci å®éªŒå®¤
  * 
  */
 
@@ -19,12 +19,12 @@ public class Filtfilt {
 	/**
 	 * 
 	 * @param B
-	 *            ÂË²¨Æ÷²ÎÊıB
+	 *            æ»¤æ³¢å™¨å‚æ•°B
 	 * @param A
-	 *            ÂË²¨Æ÷²ÎÊıA
+	 *            æ»¤æ³¢å™¨å‚æ•°A
 	 * @param input
-	 *            ÒªÂË²¨µÄÊı×é £º ÒªÇóÊÇÒ»Î¬£¬³¤¶ÈÒª´óÓÚBÊı×é¡£
-	 * @return ÂË²¨ºóµÄ½á¹û ·µ»ØdoubleÊı×é¡£
+	 *            è¦æ»¤æ³¢çš„æ•°ç»„ ï¼š è¦æ±‚æ˜¯ä¸€ç»´ï¼Œé•¿åº¦è¦å¤§äºBæ•°ç»„ã€‚
+	 * @return æ»¤æ³¢åçš„ç»“æœ è¿”å›doubleæ•°ç»„ã€‚
 	 */
 	public static ArrayList<Double> doFiltfilt(ArrayList<Double> B,
 			ArrayList<Double> A, ArrayList<Double> X) {
@@ -35,7 +35,7 @@ public class Filtfilt {
 		int nfilt = (nb > na) ? nb : na;
 		int nfact = 3 * (nfilt - 1);
 		if (len <= nfact)
-			throw new RuntimeException("ÊäÈëÊıÖµX³¤¶ÈÌ«Ğ¡£¬Êı¾İ×îÉÙÊÇÂË²¨Æ÷½×ÊıµÄÈı±¶");
+			throw new RuntimeException("è¾“å…¥æ•°å€¼Xé•¿åº¦å¤ªå°ï¼Œæ•°æ®æœ€å°‘æ˜¯æ»¤æ³¢å™¨é˜¶æ•°çš„ä¸‰å€");
 		resize(B,nfilt, 0);
 		resize(A,nfilt, 0);
 		
@@ -164,7 +164,7 @@ public class Filtfilt {
 	public static void filter(ArrayList<Double> B, ArrayList<Double> A,
 			ArrayList<Double> X, ArrayList<Double> Y,ArrayList<Double> Zi) {
 		if (A.size() == 0)
-			throw new RuntimeException("A Êı×éÎª¿Õ£¡");
+			throw new RuntimeException("A æ•°ç»„ä¸ºç©ºï¼");
 		boolean flagA = true;
 		for (Double doubleA : A) {
 			if (doubleA != 0) {
@@ -172,13 +172,14 @@ public class Filtfilt {
 			}
 		}
 		if (flagA) {
-			throw new RuntimeException("A Êı×éÖÁÉÙÒªÓĞÒ»¸öÊı²»ÎªÁã£¡");
+			throw new RuntimeException("A æ•°ç»„è‡³å°‘è¦æœ‰ä¸€ä¸ªæ•°ä¸ä¸ºé›¶ï¼");
 		}
 		if (A.get(0) == 0) {
-			throw new RuntimeException("A Êı×éµÚÒ»¸öÔªËØ²»ÄÜÎªÁã£¡");
+			throw new RuntimeException("A æ•°ç»„ç¬¬ä¸€ä¸ªå…ƒç´ ä¸èƒ½ä¸ºé›¶ï¼");
 		}
-		changeArray(A, A.get(0));
-		changeArray(B, A.get(0));
+		double a0 = A.get(0);
+		changeArray(A, a0);
+		changeArray(B, a0);
 		
 		
 		int input_size = X.size();
